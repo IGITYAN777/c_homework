@@ -95,3 +95,29 @@ int main() {
 
   return 0;
 }
+
+
+/////////////////////////////////////////////////////////////// Xndir 4
+
+#include <stdio.h>
+
+int main() {
+  
+  int x = 0;
+
+  do{
+    
+  printf("Enter the year: ");
+  scanf("%d", &x);
+    
+    if(x % 4 == 0){
+      printf("Nahanj tari e \n");
+    }else{
+      printf("Nahanj tari che \n");
+    }
+  }while(x > 0);
+  
+  return 0;
+  
+}
+

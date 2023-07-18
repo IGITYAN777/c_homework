@@ -177,4 +177,26 @@ int main() {
   
 }
 
+/////////////////////////////////////////////////////////////// Xndir 6
 
+
+#include <stdio.h>
+
+int main() {
+
+  
+  int x = 0;
+  
+  printf("Enter the  number: ");
+  scanf("%d", &x);
+
+  if(x % 1000000 == 0){
+    x += 100000;
+    printf("%d", x);
+  }else{
+    printf("%d", x);
+  }
+  
+  return 0;
+  
+}

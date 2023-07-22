@@ -200,3 +200,111 @@ int main() {
   return 0;
   
 }
+
+
+/////////////////////////////////////////////////////////////// Xndir 7   (New homework)
+
+
+#include <stdio.h>
+
+int main() {
+  int x = 0;
+  
+  printf("Enter the number of elements: ");
+  scanf("%d", &x);
+
+  int arr[x];
+
+  for (int i = 0; i < x; i++) {
+    printf("Enter the number: ");
+    scanf("%d", &arr[i]);
+  }
+
+  for (int j = 0; j < x; j++) {
+    printf("%d ", arr[j]);
+  }
+
+  return 0;
+}
+
+
+/////////////////////////////////////////////////////////////// Xndir 8
+
+#include <stdio.h>
+
+int main() {
+  int x = 0;
+  int y = 0;
+
+  printf("Enter the number of elements: ");
+  scanf("%d", &x);
+
+  char arr[x];
+
+  for (int i = 0; i < x; i++) {
+    printf("Enter the char: ");
+    scanf(" %c", &arr[i]);
+  }
+
+  for (int j = 0; j < x; j++) {
+    if ('0' <= arr[j] && arr[j] <= '9') {
+      y = arr[j] - '0';
+      printf("%d ", y);
+    }
+  }
+
+  return 0;
+}
+
+/////////////////////////////////////////////////////////////// Xndir 9
+
+#include <stdio.h>
+
+int main() {
+  
+  int x = 0;
+  int y = 0;
+
+  printf("Enter the number of elements: ");
+  scanf("%d", &x);
+
+  char arr[x];
+
+  for (int i = 0; i < x; i++) {
+    printf("Enter the char: ");
+    scanf(" %c", &arr[i]);
+  }
+
+  for (int j = (x - 1); j >= 0; j--) {
+      printf(" %c", arr[j]);
+  }
+
+  return 0;
+}
+
+/////////////////////////////////////////////////////////////// Xndir 10
+
+#include <stdio.h>
+
+int main() {
+  
+  int x = 0;
+
+  printf("Enter the length of square: ");
+  scanf("%d", &x);
+
+  for (int i = 0; i < x; i++) {
+    printf("\n * ");
+    for(int j = 0; j < (x - 1); j++){
+      if(j == (x - 2)){
+        printf("* ");
+      }else if(i == 0 || i == x - 1){
+        printf("* ");
+      }else{
+        printf("  ");
+      }
+    }
+  }
+
+  return 0;
+}

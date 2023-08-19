@@ -452,7 +452,40 @@ int main()
 
 /////////////////////////////////////////////////////////////// Xndir 14
 
+#include <stdio.h>
 
+int main()
+{
+    
+    int length = 0;
+    printf("Mutq qanaky: ");
+    scanf("%d", &length);
+    char str[length];
+    char a = 0;
+    int b = 0;
+    
+    for(int i = 0; i < length; i++){
+        printf("Mutq : ");
+        scanf(" %c", &a);
+        str[i] = a;
+    }
+    
+    for(int i = 0; i < length/2; i++){
+        if(str[i] == str[length - 1 - i]){
+            continue;
+        }else{
+            b++;
+        }
+    }
+    
+    if(b == 0){
+        printf("True");
+    }else{
+        printf("False");
+    }
+
+    return 0;
+}
 
 
 /////////////////////////////////////////////////////////////// Xndir 15

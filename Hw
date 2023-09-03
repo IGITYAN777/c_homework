@@ -576,3 +576,24 @@ int main()
 
     return 0;
 }
+
+
+/////////////////////////////////////////////////////////////// Xndir 18
+
+
+#include <stdio.h>
+
+int main()
+{
+        
+    unsigned int num = 3950617253;
+    char *ptr = (char*)&num;
+    
+    char tmp = *(ptr +1);
+    *(ptr + 1) = *(ptr + 2);
+    *(ptr + 2) = tmp;
+    printf("%u", num);
+
+    return 0;
+}
+

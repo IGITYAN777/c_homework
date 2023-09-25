@@ -597,3 +597,36 @@ int main()
     return 0;
 }
 
+
+/////////////////////////////////////////////////////////////// Xndir 19
+
+
+
+#include <stdio.h>
+
+typedef void (*T) (int*);
+
+void operation(int* ptr)
+{
+    *ptr *= 2;
+}
+
+void modify(T fptr, int* arr, int size)
+{
+    for(int i = 0; i < size; ++i)
+    {
+        fptr(arr + i);
+    }
+}
+
+int main()
+{
+    int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+    int size = sizeof(arr) / sizeof(arr[0]);
+    modify(operation, arr, size);
+
+    for(int i = 0; i < size; ++i)
+    {
+        printf("%i ", arr[i]);
+    }
+}
